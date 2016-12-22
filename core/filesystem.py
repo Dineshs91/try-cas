@@ -36,7 +36,7 @@ class FileSystem:
         self._create_dir(dirname)
         file_path = self.get_file_path(dirname, filename)
 
-        with open(file_path, 'w+') as f:
+        with open(file_path, 'wb') as f:
             f.write(content)
 
     def read(self, sha):
@@ -46,7 +46,7 @@ class FileSystem:
         if not os.path.exists(file_path):
             return None
 
-        with open(file_path, 'r+') as f:
+        with open(file_path, 'rb') as f:
             content = f.read()
 
         return content
