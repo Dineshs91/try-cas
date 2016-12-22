@@ -3,7 +3,7 @@ import os
 
 class FileSystem:
     def __init__(self):
-        self.cas_dir = "/Users/dinesh/Documents/developer/cas/.cas"
+        self.cas_dir = os.path.join(os.getcwd(), ".cas")
 
     def _create_dir(self, dirname):
         """
