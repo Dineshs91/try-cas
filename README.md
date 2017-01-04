@@ -4,6 +4,9 @@
 
 `cas fetch <sha>`
 
+To store content from a file.
+`cas store -f <filename>`
+
 Supports fetch from short sha's also instead of the complete sha.
 This will work only if there is no collision.
 
